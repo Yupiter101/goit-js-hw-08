@@ -26,15 +26,10 @@ function createGalary(galary) {
     const galleryImage = document.createElement('img');
     galleryImage.classList.add("gallery__image");
     galleryImage.src = preview;
-    // galleryImage.setAttribute('data-source', original);
-    // console.log(galleryImage);
     galleryImage.alt = description;
 
     galleryLink.append(galleryImage);
     galaryItem.append(galleryLink);
-    // console.log(galaryItem);
-    // galaryRef.append(galaryItem);
-    // newGalleryItems.push(galaryItem);
     return galaryItem;
   });
   galaryRef.append(...newGalleryItems);
